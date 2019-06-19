@@ -4,7 +4,9 @@
   "description": "A simple working graphql client",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "npm run storybook",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,26 @@
   "bugs": {
     "url": "https://github.com/joepuzzo/graphicool/issues"
   },
-  "homepage": "https://github.com/joepuzzo/graphicool#readme"
+  "homepage": "https://github.com/joepuzzo/graphicool#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-options": "^5.1.8",
+    "@storybook/addons": "^5.1.8",
+    "@storybook/react": "^5.1.8",
+    "@storybook/theming": "^5.1.8",
+    "apollo-server": "^2.6.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-emotion": "^10.0.13",
+    "babel-plugin-macros": "^2.6.1",
+    "express": "^4.17.1",
+    "graphql": "^14.3.1",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^5.0.0",
+    "react-prism": "^4.3.2",
+    "storybook-readme": "^5.0.5",
+    "style-loader": "^0.23.1"
+  }
 }
